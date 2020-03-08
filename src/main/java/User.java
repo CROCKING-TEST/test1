@@ -8,7 +8,7 @@ import java.util.Date;
  * @Version 1.0
  **/
 public class User {
-    private String Id;
+    private String id;
     private String username;
     private Date birthday;
     private String sex;
@@ -16,11 +16,11 @@ public class User {
     private String colour;
 
     public String getId() {
-        return Id;
+        return id;
     }
 
     public void setId(String id) {
-        this.Id = id;
+        this.id = id;
     }
 
     public String getUsername() {
@@ -61,5 +61,17 @@ public class User {
 
     public void setColour(String colour) {
         this.colour = colour;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", username='" + username + '\'' +
+                ", birthday=" + birthday +
+                ", sex='" + sex + '\'' +
+                ", address='" + address + '\'' +
+                ", colour='" + colour + '\'' +
+                '}';
     }
 }
